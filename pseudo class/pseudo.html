@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #div1 h2{
+            background-color: antiquewhite;
+            text-align: center;
+            font-style: italic;
+        }
+       .content1 a{
+        margin-right: 10px;
+        padding: 5px;
+        background-color: #f1f4c6;
+        text-decoration: none;
+        border-radius: 3px;
+        color: black;
+       }
+        .content1 a:hover{
+            background-color: blue;
+            color: white;
+        }
+        #div2 h2{
+            font-style: italic;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        .content2 li{
+            display: inline;
+            margin: 10px;
+            padding: 10px;
+            background-color: beige;
+            border-radius: 3px;
+        }
+        .content2 a{
+            text-decoration: none;
+            text-align: end;
+        }
+        .content2 nav li:active{
+            background-color: black;
+        }
+        #div3 h2{
+            font-style: italic;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        #nav1 li:nth-child(1 ){
+            color: red;
+            background-color: #f1f4c6;
+        }
+        #nav1 li:nth-child(4){
+            color: red;
+            background-color: #f1f4c6;
+        }
+        #div4 h2{
+            font-style: italic;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        form{
+            margin: 20px;
+            width: 100%;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        #div4 form {
+            width: 300px;
+            margin: 20px ;
+            padding: 30px;
+            background-color: lightgrey;
+            border-radius: 5px;
+            border: 2px solid white;
+            color: black;
+        }
+     #div4 form:focus{
+        outline: 2px soild red;
+        }
+        #div5 h2{
+            font-style: italic;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+       button:hover{
+        color: red;
+       }
+       button:active{
+        background-color: black;
+       }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h2>Hover Effects on Navigation Bar</h2>
+        <div class="content1" style="text-align: end;">
+            <nav>
+                <a href="#" >home</a>
+                <a href="#">about</a>
+                <a href="#">contact me</a>
+            </nav>
+        </div>
+    </div>
+    <div id="div2">
+        <h2>Highlight Active Menu Item</h2>
+        <div class="content2" style="text-align: end;">
+            <nav>
+                <ul style="list-style: none;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="div3">
+        <h2>Style First and Last Child Elements</h2>
+        <nav id="nav1">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="div4">
+        <h2>Form Input Focus</h2>
+        <form  action="#">
+            <label  for="Name"> Name</label>
+            <input type="text" id="Name" name="name" placeholder="Your Name" required>
+            <label  for="Email">Email</label>
+            <input type="email" id="Email" name="Email" placeholder="Your Mail ID" required>
+            <label for="Subject">Subject</label>
+            <input type="text" id="Subject" name="Subject" placeholder="Subject" required>
+            <button type="submit">submit</button>
+            </form>
+    </div>
+    <div id="div5">
+        <h2>Button Hover and Active States</h2>
+        <div class="content4">
+        <button type="submit">button</button>
+    </div>
+    </div>
+   </body>
+</html>
